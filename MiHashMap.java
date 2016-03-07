@@ -52,7 +52,8 @@ public class MiHashMap
     /**
      * Metodo que devuelve el valor asociado con la clave especificada o -1 en caso de que la clave no exista.
      */
-    public int get(String clave){
+    public int get(String clave)
+    {
         int valor = -1;
         for(int cont = 0;cont < claves.length && valor == -1;cont++){
             if(claves[cont].equals(clave)){
@@ -65,7 +66,16 @@ public class MiHashMap
     /**
      * Metodo que devuelve true si el mapa no contiene elementos
      */
-    public boolean isEmpty(){
+    public boolean isEmpty()
+    {
         return claves.length==0;
+    }
+    
+    /**
+     *  Metodo que devuelve el número de elementos del mapa.
+     */
+    public int size()
+    {
+        return claves.length;
     }
 }
