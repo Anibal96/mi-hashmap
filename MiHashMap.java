@@ -48,7 +48,7 @@ public class MiHashMap
         }
         return devolver;
     }
-    
+
     /**
      * Metodo que devuelve el valor asociado con la clave especificada o -1 en caso de que la clave no exista.
      */
@@ -62,7 +62,7 @@ public class MiHashMap
         }
         return valor;
     }
-    
+
     /**
      * Metodo que devuelve true si el mapa no contiene elementos
      */
@@ -70,7 +70,7 @@ public class MiHashMap
     {
         return claves.length==0;
     }
-    
+
     /**
      *  Metodo que devuelve el número de elementos del mapa.
      */
@@ -78,4 +78,15 @@ public class MiHashMap
     {
         return claves.length;
     }
+
+    /**
+     * Metodo que vacía el mapa.
+     */
+    public void clear()
+    {
+        valores = new int [0];
+        claves = new String[0];
+    }
+
+    
 }
