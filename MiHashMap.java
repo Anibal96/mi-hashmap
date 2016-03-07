@@ -88,5 +88,17 @@ public class MiHashMap
         claves = new String[0];
     }
 
-    
+    /**
+     * Metodo que devuelve true si el mapa contiene la clave dada.
+     */
+    public boolean containsKey(String clave)
+    {
+        boolean encontrado = false;
+        for(int cont = 0;cont < claves.length || encontrado == false;cont++){
+            if (claves[cont].equals(clave)){
+                encontrado = true;
+            }
+        }
+        return encontrado;
+    }
 }
