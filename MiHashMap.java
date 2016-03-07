@@ -101,4 +101,18 @@ public class MiHashMap
         }
         return encontrado;
     }
+    
+    /**
+     * Metodo que devuelve true si el mapa contiene el valor dado.
+     */
+    public boolean containsValue(int valor)
+    {
+        boolean encontrado = false;
+        for(int cont = 0;cont < valores.length || encontrado == false;cont++){
+            if (valores[cont] == (valor)){
+                encontrado = true;
+            }
+        }
+        return encontrado;
+    }
 }
