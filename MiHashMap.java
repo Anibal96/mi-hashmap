@@ -48,4 +48,17 @@ public class MiHashMap
         }
         return devolver;
     }
+    
+    /**
+     * Metodo que devuelve el valor asociado con la clave especificada o -1 en caso de que la clave no exista.
+     */
+    public int get(String clave){
+        int valor = -1;
+        for(int cont = 0;cont < claves.length && valor == -1;cont++){
+            if(claves[cont].equals(clave)){
+                valor = valores[cont];
+            }
+        }
+        return valor;
+    }
 }
